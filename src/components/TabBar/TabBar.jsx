@@ -1,11 +1,14 @@
-import React from 'react'
+import React from "react";
+import "./tabBar.css";
 
 const TabBar = () => {
   return (
     <>
-      <h1>Tab bar</h1>
+      <div className="tab-bar">
+        <h1>Tab Bar</h1>
+      </div>
     </>
-  )
-}
+  );
+};
 
-export default TabBar
+export default TabBar;

@@ -1,0 +1,7 @@
+.tab-bar{
+    height: 70px;
+    position: relative;
+}
+.tab-bar > h1{
+    color: green;
+}

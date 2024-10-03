@@ -1,22 +1,25 @@
-import { useState } from 'react'
-import {Routes,Route} from 'react-router-dom'
+import { useState } from "react";
+import { Routes, Route } from "react-router-dom";
 
-import Header from './components/Header/Header'
-import Home from './pages/Home/Home'
-import TabBar from './components/TabBar/TabBar'
+import Header from "./components/Header/Header";
+import Home from "./pages/Home/Home";
+import TabBar from "./components/TabBar/TabBar";
 
-import './App.css'
+import "./App.css";
 
 function App() {
+  
   return (
     <>
-      <Header />
+      <main>
+        <Header />
         <Routes>
-          <Route path="/" element={<Home/>} />
+          <Route path="/" element={<Home />} />
         </Routes>
-      <TabBar />
+        <TabBar />
+      </main>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
