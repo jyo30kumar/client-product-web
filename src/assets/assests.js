@@ -24,7 +24,7 @@ import stainless_watch from './product-images/watch/stainless-watch.jpg'
 import white_watch from './product-images/watch/white-watch.jpg'
 import zed_black_watch from './product-images/watch/zed-black-watch.jpg'
 
-export const categories = [
+export const category = [
     {
         id:1,
         name:"Bottle",

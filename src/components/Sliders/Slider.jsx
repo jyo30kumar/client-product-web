@@ -1,8 +1,9 @@
-import React, { useState, useEffect} from "react";
+import React, { useState, useEffect, useContext} from "react";
 import "./slider.css";
 import CountDown from "../CountDown/CountDown";
+import StoreContext from "../../context/StoreContext";
 
-const Slider = () => {
+const Slider = () => {  
 
   return (
     <>

@@ -13,7 +13,7 @@
     height: 140px;
 }
 .slider-1 > p{
-    color: #5618AD;
+    color: var(--color-heading);
     font: 2.5rem var(--font-heading);
     font-weight: bolder;
     text-align: center;
