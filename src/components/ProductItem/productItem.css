@@ -1,0 +1,84 @@
+.image-wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    position: relative;
+    min-width:100px;
+    flex-shrink: 1;
+}
+.image-wrapper img{
+    flex-grow: 1;
+    flex-shrink: 1;
+    max-height: 100px;
+    width: 100%;
+    border-radius: 10px;
+    align-self: center;
+    border: 2px solid rgba(75, 90, 124,0.4);
+    overflow: hidden;
+}
+.image-wrapper > p{
+    font-size: 1.3rem;
+    max-width: 100%;
+    flex-shrink: 0;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    color: #1E0E49;
+}
+.price-box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+p.quantity{
+    color: #8d7f7f;
+}
+p.price{
+    font-size: 1.3rem;
+    font-weight: 600;
+     color: var(--color-heading);
+}
+p.price::before{
+    content:'\20B9';
+}
+span.product-item-counter{
+    display: flex;
+}
+.product-item-counter .fa-solid{
+    font-size: 1.2rem;
+    margin: 0;
+    padding: 0;
+    color:#fb6b51;
+    border: 2px solid  #ff8247;
+    border-radius: 3px;
+    padding: 1px;
+    cursor: pointer;
+}
+.count-box{
+    display: flex;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+    border-radius: 2px;
+    font-size: 1.1rem;
+    overflow: hidden;
+}
+.remove-item{
+    color: tomato;
+    background-color: #ffebee; /* Light tomato color background */
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+    padding: 3px 6px;
+    cursor: pointer;
+}
+.add-item{
+    color: green;
+    background-color: #e8f5e9; /* Light green color background */
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+    padding: 3px 6px;
+    cursor: pointer;
+}
+.count-text{
+    padding: 0px 4px;
+    display: flex;
+    align-items: center;
+}

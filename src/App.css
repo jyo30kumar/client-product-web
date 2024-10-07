@@ -7,9 +7,10 @@ main{
     background: var(--color-background);
     overflow-y: auto;
     scrollbar-width: none;
+    scroll-behavior: smooth;
 }
 @media (min-width:480px){
     main{
-        border: 2px solid var(--color-primary);
+        border: 2px solid #370F6E;
     }
 }
