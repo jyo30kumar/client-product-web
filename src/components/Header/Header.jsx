@@ -3,7 +3,6 @@ import SearchBar from "../SearchBar/SearchBar";
 //import  font awesome icons
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUser, faLocationDot } from "@fortawesome/free-solid-svg-icons";
-import moduleName from "module";
 
 //css
 import "./header.css";
@@ -14,7 +13,9 @@ const Header = () => {
       <header>
         <div className="inner-header-top">
           <SearchBar />
-          <FontAwesomeIcon icon={faUser} aria-hidden="true" className="header-user" />
+          <div className="header-user">
+          <FontAwesomeIcon icon={faUser} aria-hidden="true" className="fa-solid fa-user" />
+          </div>
         </div>
         <div className="inner-header-bottom">
           <p>Delivery available at pincode 306401</p>
