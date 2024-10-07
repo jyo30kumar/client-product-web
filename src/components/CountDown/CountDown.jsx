@@ -2,8 +2,8 @@ import React, { useEffect, useState } from "react";
 import "./countDown.css";
 
 const Counter = () => {
-  const startDate = "2024-10-04"; // Start date
-  const startTime = "19:33:15"; 
+  const startDate = "2024-10-05"; // Start date
+  const startTime = "06:41:20"; 
   const [timer, setTimer] = useState({ hours: 0, minutes: 0, seconds: 5 });
   const [countdownStarted, setCountdownStarted] = useState(false); // Flag to start countdown
   const { hours, minutes, seconds } = timer;
