@@ -8,7 +8,7 @@ import TabBar from "./components/TabBar/TabBar";
 import "./App.css";
 
 function App() {
-  
+  // set height dynamically to window according to different screen 
   useEffect(()=>{
     const setVh = () =>{
       const vh = window.innerHeight * 0.01;

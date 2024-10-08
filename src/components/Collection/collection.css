@@ -20,9 +20,8 @@
     cursor: pointer;
     align-items: center;
     flex-shrink: 0;
-    height: 100px;
     width: 70px;
-    /* padding: 0 7px; */
+    height: 100px;
 }
 .display-category span.active{
     background: linear-gradient(to bottom, rgba(255, 255, 255, 0.7), rgba(150, 100, 200, 1));
