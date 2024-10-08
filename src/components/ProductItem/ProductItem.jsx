@@ -12,10 +12,17 @@ export const ProductItem = ({ id, image, name, unit, price, quantity }) => {
 
   return (
     <div className="image-wrapper">
-      {(!isLoaded)&&(
-        <img src={placeholderSrc} alt={name} loading="lazy" />  
-      )}
-      <img src={image} alt={name} loading="lazy" style={{opacity:isLoaded?1:0, transition:"opacity 0.5s ease-in-out" }} onLoad={()=>setIsLoaded(true)} />
+      {!isLoaded && <img src={placeholderSrc} alt={name} loading="lazy" />}
+      <img
+        src={image}
+        alt={name}
+        loading="lazy"
+        style={{
+          opacity: isLoaded ? 1 : 0,
+          transition: "opacity 0.5s ease-in-out",
+        }}
+        onLoad={() => setIsLoaded(true)}
+      />
       <p>{name} asdfsd sd sa fs saf</p>
       <p className="quantity">{quantity + " " + unit}</p>
       <div className="price-box">
