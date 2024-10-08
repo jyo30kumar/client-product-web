@@ -25,7 +25,7 @@ const Collection = ({ category, setCategory }) => {
               (<img
                 className="imgae-wrapper"
                 src={placeholderSrc}
-                alt="placeholder"
+                alt={cl.name}
               />)}
               <img
                 className="imgae-wrapper"
