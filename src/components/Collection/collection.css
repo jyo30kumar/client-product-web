@@ -35,11 +35,12 @@
     font-weight: bold;
 }
 .display-category span > img.imgae-wrapper{
-    height: 55px;
+    min-height: 55px;
     width: 55px;
     border-radius: 13px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     object-fit: fill;
+    font-size: 1.3rem;
 }
 .display-category span > p{
     font: 1.3rem var(--font-body-text);

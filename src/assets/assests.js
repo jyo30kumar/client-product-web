@@ -31,6 +31,9 @@ import collection_electronic from '../assets/collection-images/electronic.jpg'
 import collection_pencil from '../assets/collection-images/pencil.jpg'
 import collection_watch from '../assets/collection-images/watch.jpg'
 
+export const placeholderSrc = "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='100%' height='100%'><rect width='100%' height='100%' fill='url(#grad)'/><defs><linearGradient id='grad' x1='0%' y1='0%' x2='100%' y2='0%'><stop offset='0%' style='stop-color:rgb(239,67,114);stop-opacity:1' /><stop offset='100%' style='stop-color:rgb(255,255,255);stop-opacity:0.7' /></linearGradient></defs></svg>";
+
+
 export const collection = [
     {
         id:1,
