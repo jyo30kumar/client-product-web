@@ -25,8 +25,9 @@ const TabBar = () => {
         <ul role="tab-button">
           {tabs.map((tab) => (
             <li
+              key={tab.label}
               onClick={() => setActiveTab(tab.label)}
-              className={activeTab === tab.label && "active"}
+              className={activeTab === tab.label ? "active" : ""}
             >
               <FontAwesomeIcon icon={tab.icon} />
               <p>{tab.label}</p>
