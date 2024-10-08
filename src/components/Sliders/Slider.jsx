@@ -1,8 +1,6 @@
 import React, { useState, useEffect, useContext, memo} from "react";
 import "./slider.css";
 import CountDown from "../CountDown/CountDown";
-import StoreContext from "../../context/StoreContext";
-
 const Slider = () => {  
 
   return (

@@ -11,11 +11,10 @@
 
 .timer span {
     background: #FFD700; 
-    padding: 18px;
-    border-radius: 10px; 
+    padding: 10px;
+    border-radius: 5px; 
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); 
     text-align: center;
-    min-width: 50px; 
     color: #7B22FA; 
     font-weight: bold;
 }
