@@ -6,6 +6,7 @@ header{
     linear-gradient(to bottom, #d5a7ff 0%, #7B22FA 90%, #3D0A4D 100%), url(https://www.transparenttextures.com/patterns/diagmonds-light.png);
     background-blend-mode: overlay;
     padding: 15px;
+    padding-bottom: 10px;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
