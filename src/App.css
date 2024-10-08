@@ -8,6 +8,7 @@ main{
     overflow-y: auto;
     scrollbar-width: none;
     scroll-behavior: smooth;
+    padding-bottom: 70px ;
 }
 @media (min-width:480px){
     main{

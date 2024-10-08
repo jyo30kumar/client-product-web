@@ -1,21 +1,28 @@
 .tab-bar{
     background: #FFFFFF;
     width: 100%;
-    position: fixed;
-    left: 0;
-    bottom: 0;
+    position: absolute;
+    bottom: -1px;
     z-index: 3;
+    margin: 0 auto;
     overflow: hidden;
     border-top: 1px solid #e0e0e0;
     font-size: 1.3rem;
     font-family: var(--font-navigation);
     color: #666666;
+    box-sizing: border-box;
+}
+@media (min-width:480px){
+    .tab-bar{
+        width: calc(100% - 4px);
+        left:2px;
+    }
 }
 .tab-bar > ul {
     width: 100%;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  grid-row: 70px;
+  grid-template-rows: 70px;
   list-style: none;
 }
 .tab-bar li{
