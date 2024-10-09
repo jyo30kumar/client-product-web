@@ -3,7 +3,7 @@ main{
     display: flex;
     flex-direction: column;
     position: relative;
-    height: 100vh;
+    height: calc(var(--vh,1)*100);
     background: var(--color-background);
     overflow-y: auto;
     scrollbar-width: none;
