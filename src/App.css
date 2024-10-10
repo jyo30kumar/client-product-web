@@ -1,4 +1,10 @@
+#root{
+    display: flex;
+    position: relative;
+    width: 100%;
+}
 main{
+    flex-grow: 1;
     width: 100%;
     display: flex;
     flex-direction: column;

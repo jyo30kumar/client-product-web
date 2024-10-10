@@ -17,10 +17,6 @@ export const StoreContextProvider = ({ children }) => {
     setCartItem((prev) => ({ ...prev, [itemId]: prev[itemId] - 1 }));
   }
 
-  useEffect(() => {
-    console.log(cartItem);
-  }, [cartItem]);
-
   const context = {
     cartItem,
     addToCart,
