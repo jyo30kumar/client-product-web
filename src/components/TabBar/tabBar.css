@@ -25,15 +25,13 @@
   grid-template-rows: 70px;
   list-style: none;
 }
-.tab-bar li{
+.tab-link{
     padding: 15px 0;
     text-align: center;
     display: flex;
     flex-direction: column;
     gap: 5px;
     cursor: pointer;
-}
-.tab-link{
     text-decoration: none;
     color: #666666;
 }

@@ -6,6 +6,9 @@ const Cart = () => {
 
     const {cartItem, addToCart, removeToCart} = useContext(StoreContext);
 
+    console.log(cartItem);
+    
+
   return (
     <>
       <div className="cart">

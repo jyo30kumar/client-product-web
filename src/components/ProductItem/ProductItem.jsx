@@ -23,7 +23,7 @@ export const ProductItem = ({ id, image, name, unit, price, quantity }) => {
         }}
         onLoad={() => setIsLoaded(true)}
       />
-      <p>{name} asdfsd sd sa fs saf</p>
+      <p>{name}</p>
       <p className="quantity">{quantity + " " + unit}</p>
       <div className="price-box">
         <p className="price">{price}</p>

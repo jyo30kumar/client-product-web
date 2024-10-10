@@ -1,4 +1,4 @@
-import React from "react";
+import React, {memo} from "react";
 import SearchBar from "../SearchBar/SearchBar";
 //import  font awesome icons
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -29,4 +29,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default memo(Header);
