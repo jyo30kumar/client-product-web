@@ -35,8 +35,8 @@
     text-decoration: none;
     color: #666666;
 }
-.tab-link:focus{
-    color:#370F6E;
+.tab-link:focus, .tab-link:visited{
+    color:inherit;
 }
 .tab-bar .active{
     color:#370F6E;
