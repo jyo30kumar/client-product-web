@@ -27,6 +27,7 @@
 .price-box{
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 p.quantity{
     color: #8d7f7f;
