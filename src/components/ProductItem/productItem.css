@@ -13,7 +13,7 @@
     border: 1px solid rgba(75, 90, 124,0.4);
     font-size: 1.2rem;
     object-position: center center;
-    object-fit: fill;
+    object-fit: cover;
 }
 .image-wrapper > p{
     font-size: 1.3rem;
