@@ -42,6 +42,22 @@
     color:#370F6E;
     position: relative;
 }
+.tab-link  .cart-notification{
+    position: absolute;
+    height: 12px;
+    width: 12px;
+    padding: 7px;
+    border-radius: 50%;
+    background-color: tomato;
+    color: #370F6E;
+    font-size: 0.9rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    left:52%;
+    top: 6px;
+}
 .tab-bar .active::before{
     content: '';
     position: absolute;

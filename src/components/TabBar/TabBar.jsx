@@ -1,4 +1,4 @@
-import React, { memo, useEffect, useState } from "react";
+import React, { memo, useContext, useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 
 // import css
@@ -13,10 +13,12 @@ import {
   faHome,
   faLayerGroup,
 } from "@fortawesome/free-solid-svg-icons";
+import StoreContext from "../../context/StoreContext";
 
 const TabBar = () => {
   const location = useLocation();
   const [activeTab, setActiveTab] = useState("Home");
+  const {cartItem} = useContext(StoreContext);
   const tabs = [
     { icon: faHome, label: "Home", tabLink: "/" },
     { icon: faLayerGroup, label: "Category", tabLink: "/category" },
@@ -24,6 +26,19 @@ const TabBar = () => {
     { icon: faBagShopping, label: "Orders", tabLink: "/orders" },
     { icon: faHandHoldingHand, label: "Help", tabLink: "/help" },
   ];
+
+  // function to check if there are any item in the array
+  const hasItemsInCart = ()=>{
+    return Object.values(cartItem).some(item => item > 0);
+  }
+  // function for to count items in cart 
+  const quantityInCart = () =>{
+    let sum = 0;
+    for(const key in cartItem){
+      sum += cartItem[key];
+    }
+    return sum;
+  }
 
   useEffect(() => {
     const locationPath = location.pathname;
@@ -43,6 +58,9 @@ const TabBar = () => {
               onClick={() => setActiveTab(tab.label)}
             >
               <FontAwesomeIcon icon={tab.icon} />
+              {(tab.label == "Cart" && hasItemsInCart() ) && (
+                <span className="cart-notification" >{quantityInCart()}</span>
+              )}
               <p>{tab.label}</p>
             </Link>
           ))}
