@@ -1,6 +1,5 @@
 import { Routes, Route } from "react-router-dom";
 // import components
-import Header from "./components/Header/Header";
 import TabBar from "./components/TabBar/TabBar";
 // import pages 
 import Home from "./pages/Home/Home";
@@ -19,7 +18,6 @@ function App() {
   return (
     <>
       <main>
-        <Header />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/cart" element={<Cart />} />

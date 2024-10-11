@@ -16,7 +16,7 @@ const CartItem = () => {
           if (cartItem[item.id]) {
             return (
               <div className="cart-items" key={item.id}>
-                <div className="cart-item-image">
+                <div className="cart-item-image-container">
                   <img src={item.image} alt={item.name} />
                   <div className="cart-item-quantity-selector">
                     <FontAwesomeIcon
@@ -24,7 +24,7 @@ const CartItem = () => {
                       className="remove-cart-item"
                       onClick={() => removeToCart(item.id)}
                     />
-                    <span className="count-text">{cartItem[item.id]}</span>
+                    <span className="count-item-text">{cartItem[item.id]}</span>
                     <FontAwesomeIcon
                       icon={faPlus}
                       className="add-cart-item"
@@ -33,12 +33,12 @@ const CartItem = () => {
                   </div>
                 </div>
                 <div className="cart-item-info">
-                  <p>{item.name}</p>
+                  <p className="cart-item-name">{item.name}</p>
                   <p>
-                    Price: <span> {item.price}</span>
+                    Price: <span className="item-amount">{item.price}</span>
                   </p>
-                  <p>
-                    Total Price: <span>{item.price * cartItem[item.id]}</span>
+                  <p className="cart-item-total">
+                    Total Price: <span className="item-total-amount">{item.price * cartItem[item.id]}</span>
                   </p>
                 </div>
               </div>
