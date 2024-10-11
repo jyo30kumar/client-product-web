@@ -62,7 +62,7 @@
   }
   body{
     color: var(--color-text-primary);
-    font: 1.6rem/1.25 var(--font-body-text);
+    font: 1.3rem/1.15 var(--font-body-text);
     margin: 0 auto;
     min-width:350px;
     max-width: 480px;
