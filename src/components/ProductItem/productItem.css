@@ -42,21 +42,20 @@ p.price::before{
 span.product-item-counter{
     display: flex;
 }
-.product-item-counter .fa-solid{
-    font-size: 1rem;
-    margin: 0;
-    padding: 0;
-    color:#fb6b51;
-    border: 2px solid  #ff8247;
+.product-item-counter .add-first-item{
+    font-size: 1.1rem;
+    color:#f76c4d;
+    border: 2px solid  #f76c4d;
     border-radius: 3px;
-    padding: 1px;
+    padding: 2px 6px;
+    transform: translate(-1px, -2px) scaleY(1.2);
     cursor: pointer;
 }
 .count-box{
     display: flex;
-    box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
     border-radius: 2px;
-    font-size: 1rem;
+    font-size: 1.1rem;
+    transform: translate(-1px, -2px) scaleY(1.2);
     overflow: hidden;
 }
 .remove-item{
@@ -76,7 +75,7 @@ span.product-item-counter{
     cursor: pointer;
 }
 .count-text{
-    padding: 0px 4px;
+    padding: 0px 7px;
     display: flex;
     align-items: center;
 }

@@ -29,11 +29,7 @@ export const ProductItem = ({ id, image, name, unit, price, quantity }) => {
         <p className="price">{price}</p>
         <span className="product-item-counter">
           {!cartItem[id] ? (
-            <FontAwesomeIcon
-              icon={faPlus}
-              className="fa-solid fa-plus"
-              onClick={() => addToCart(id)}
-            />
+            <p className="add-first-item" onClick={() => addToCart(id)}>ADD</p>
           ) : (
             <div className="count-box">
               <FontAwesomeIcon
