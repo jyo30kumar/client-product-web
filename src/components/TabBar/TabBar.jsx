@@ -57,7 +57,7 @@ const TabBar = () => {
               className={`tab-link ${activeTab === tab.label ? "active" : ""}`}
               onClick={() => setActiveTab(tab.label)}
             >
-              <FontAwesomeIcon icon={tab.icon} />
+              <FontAwesomeIcon icon={tab.icon} id={tab.id} />
               {(tab.label == "Cart" && hasItemsInCart() ) && (
                 <span className="cart-notification" >{quantityInCart()}</span>
               )}
