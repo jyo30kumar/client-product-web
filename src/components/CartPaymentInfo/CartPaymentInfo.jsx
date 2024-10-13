@@ -31,7 +31,7 @@ const CartPaymentInfo = ({getTotalAmount}) => {
           <p>Total Amount</p>
           <p>{getTotalAmount() + 10}</p>
         </div>
-        <button className="cart-proceed-button">Proceed</button>
+        <button className="cart-proceed-button">PROCEED TO CHECKOUT</button>
       </div>
       </div>
     </>

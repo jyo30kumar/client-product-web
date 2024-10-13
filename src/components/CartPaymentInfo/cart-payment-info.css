@@ -52,10 +52,10 @@
     align-self: flex-end;
     background-color: #f76c4d;
     border: 1px solid #e55e4d;
-    width: 100px;
-    font-size: 1.3rem;
+    width: 150px;
+    font-size: 1.2rem;
     font-weight: 500;
-    color: #4d2c26;
+    color: #370F6E;
     padding: 3px 0;
     border-radius: 3px;
     font-family: var(--font-navigation);
