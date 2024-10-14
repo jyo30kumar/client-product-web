@@ -9,7 +9,6 @@ import { placeholderSrc } from "../../assets/assests";
 export const ProductItem = ({ id, image, name, unit, price, quantity }) => {
   const { cartItem, addToCart, removeToCart } = useContext(StoreContext);
   const [isLoaded, setIsLoaded] = useState(false);
-
   return (
     <div className="image-wrapper">
       {!isLoaded && <img src={placeholderSrc} alt={name} loading="lazy" />}
