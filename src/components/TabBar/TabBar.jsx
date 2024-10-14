@@ -17,7 +17,7 @@ import StoreContext from "../../context/StoreContext";
 
 const TabBar = () => {
   const location = useLocation();
-  const [activeTab, setActiveTab] = useState("Home");
+  const [activeTab, setActiveTab] = useState("");
   const {cartItem} = useContext(StoreContext);
   const tabs = [
     { icon: faHome, label: "Home", tabLink: "/" },
@@ -41,9 +41,9 @@ const TabBar = () => {
   }
 
   useEffect(() => {
-    const locationPath = location.pathname;
-    const matchingTab = tabs.find((tab) => tab.tabLink == locationPath);
-    matchingTab && setActiveTab(matchingTab.label);
+    const locationPath = location.pathname;    
+      const matchingTab = tabs.find((tab) => tab.tabLink == locationPath);
+    matchingTab ? setActiveTab(matchingTab.label):setActiveTab("");  
   }, [location]);
 
   return (
@@ -57,7 +57,7 @@ const TabBar = () => {
               className={`tab-link ${activeTab === tab.label ? "active" : ""}`}
               onClick={() => setActiveTab(tab.label)}
             >
-              <FontAwesomeIcon icon={tab.icon} id={tab.id} />
+              <FontAwesomeIcon icon={tab.icon} />
               {(tab.label == "Cart" && hasItemsInCart() ) && (
                 <span className="cart-notification" >{quantityInCart()}</span>
               )}
