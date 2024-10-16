@@ -24,8 +24,8 @@ function App() {
           <Route path="/cart" element={<Cart />} />
           <Route path="/place-order" element={<PlaceOrder />} />
         </Routes>
+        <TabBar />
       </main>
-      <TabBar />
     </>
   );
 }
