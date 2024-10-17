@@ -23,11 +23,11 @@
 }
 
 .login-title h1 {
-  color: #ff6347; /* Dark tomato for the main color */
+  color: #370f6e; /* Dark tomato for the main color */
   background: linear-gradient(
     135deg,
-    #ff6347 0%,
-    /* Dark Tomato */ #ff8c00 100% /* Orange */
+    #7b22fa 0%,
+     #370f6e 100%
   );
   background-clip: text;
   color: transparent;
@@ -84,7 +84,7 @@ button[type="submit"]:hover {
 .login-terms {
   margin-top: 20px;
   text-align: center;
-  color: #ff6500;
+  color: #370f6e;
   font-weight: 600; 
   font-size: 1.2rem;
 }
