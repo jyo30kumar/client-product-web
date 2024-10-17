@@ -48,6 +48,7 @@ form{
   left:4%;
   color: #370f6e;
   font-size: 1.2rem;
+  font-weight: bold;
 }
 
 input[type="number"] {
