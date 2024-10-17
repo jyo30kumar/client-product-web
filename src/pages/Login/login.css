@@ -74,8 +74,9 @@ input[type="tel"] {
   height: 42px;
 }
 
-input[type="tel"]:focus-visible{
+input[type="tel"]:focus-visible, input[type="tel"]:focus-visible{
   border: 2px solid #5618ad ;
+  outline: none;
 }
 button[type="submit"] {
   width: 100%;

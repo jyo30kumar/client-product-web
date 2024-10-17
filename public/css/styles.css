@@ -55,12 +55,12 @@ input {
   overflow: visible;
 }
 /* Remove arrows in WebKit browsers (Chrome, Safari, etc.) */
-input[type="number"]::-webkit-outer-spin-button,
-input[type="number"]::-webkit-inner-spin-button {
+input[type="tel"]::-webkit-outer-spin-button,
+input[type="tel"]::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
-input[type="number"] {
+input[type="tel"] {
   appearance: none;
 }
 body {
