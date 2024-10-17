@@ -7,7 +7,8 @@ const Login = () => {
   const [inputValue, setInputValue] = useState("");
 
   const handleChange = (e) => {
-    const { value } = e.target;
+    let { value } = e.target;
+    value = value.replace(/[^0-9]/g,"");
     if(value.length <= 10){
       setInputValue(value);
     }
@@ -26,9 +27,10 @@ const Login = () => {
           <form onSubmit={handleSubmit}>
             <span className="input-prefix">+91</span>
             <input
-              type="number"
+              type="tel"
               name="phoneNumber"
               id="phoneNumber"
+              pattern="[0-9]*"
               onChange={handleChange}
               placeholder="Mobile Number"
               value={inputValue}
