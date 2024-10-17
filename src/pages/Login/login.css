@@ -1,4 +1,6 @@
+
 .login {
+  position: relative;
   margin-bottom: -70px;
   padding: 20px;
   display: flex;
@@ -6,11 +8,20 @@
   justify-content: space-around;
   align-items: center;
   flex: 1;
-  background: linear-gradient(135deg, #370f6e 0%, #7b22fa 50%, #d5a7ff 100%),
-    url("../../../public/images/asfalt-light.png"); /* Subtle textured background pattern */
-  background-size: cover;
-  background-blend-mode: overlay;
+  background: linear-gradient(135deg, #370f6e 0%, #7b22fa 50%, #d5a7ff 100%);
   overflow: hidden;
+}
+
+.login::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url("../../../public/images/login-bg.png") no-repeat center/cover;
+  opacity: 0.1; 
+  background-size: cover;
 }
 
 .login-container {
