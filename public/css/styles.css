@@ -1,76 +1,78 @@
-:root{
-    --color-primary:#7B22FA;
-    --color-button-secondary:#5618ad;
-    --color-background:#FFFFFF;
-    --color-highlight:#FFD700;
-    --color-surface:#F5F5F5;
-    --color-heading:#370F6E;
-    --color-text-primary:#000000;
-    --color-text-secondary:#7B22FA;
-    --color-text-muted:#CCCCCC; 
-    --gradient-primary:
-    linear-gradient(
-      to bottom,
-      #7b22fae6 90%,
-      #370f6ee6 115%),
-    linear-gradient(
-        to bottom, 
-        transparent 0%, 
-        #000000 91%);
-    --font-body-text: 'Roboto';
-    --font-heading: 'Roboto Slab';
-    --font-navigation: 'Roboto Condensed';
-  }
-  
-  /* Resets */
-  *,
-  *::before,
-  *::after{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  html{
-    font: 62.5% / 1.2 var(--font-body-text),sans-serif;
-  }
-  h1,h2{
-    margin-bottom: 0;
-    font-family: var(--font-heading);
-    color: var(--color-heading);
-  }
-  h1{
-    font-size: 2rem;
-  }
-  h2{
-    font-size: 1.7rem;
-  }
-  ul{
-    list-style: none;
-    padding: 0;
-  }
-  button{
-    border: none;
-    font: 1.6rem var(--font-navigation);
-    line-height: normal;
-    overflow: visible;
-    padding: 0;
-    width: auto;
-  }
-  input {
-    overflow: visible;
-  }
-  body{
-    color: var(--color-text-primary);
-    font: 1.2rem/1.15 var(--font-body-text);
-    margin: 0 auto;
-    min-width:350px;
-    max-width: 480px;
-    width: 100%;
-    height:calc(var(--vh,1vh)*100);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
-  }
-  
+:root {
+  --color-primary: #7b22fa;
+  --color-button-secondary: #5618ad;
+  --color-background: #ffffff;
+  --color-highlight: #ffd700;
+  --color-surface: #f5f5f5;
+  --color-heading: #370f6e;
+  --color-text-primary: #000000;
+  --color-text-secondary: #7b22fa;
+  --color-text-muted: #cccccc;
+  --gradient-primary: linear-gradient(to bottom, #7b22fae6 90%, #370f6ee6 115%),
+    linear-gradient(to bottom, transparent 0%, #000000 91%);
+  --font-body-text: "Roboto";
+  --font-heading: "Roboto Slab";
+  --font-navigation: "Roboto Condensed";
+}
+
+/* Resets */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font: 62.5% / 1.2 var(--font-body-text), sans-serif;
+}
+h1,
+h2 {
+  margin-bottom: 0;
+  font-family: var(--font-heading);
+  color: var(--color-heading);
+}
+h1 {
+  font-size: 2rem;
+}
+h2 {
+  font-size: 1.7rem;
+}
+ul {
+  list-style: none;
+  padding: 0;
+}
+button {
+  border: none;
+  font: 1.6rem var(--font-navigation);
+  line-height: normal;
+  overflow: visible;
+  padding: 0;
+  width: auto;
+}
+input {
+  overflow: visible;
+}
+/* Remove arrows in WebKit browsers (Chrome, Safari, etc.) */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type="number"] {
+  appearance: none;
+}
+body {
+  color: var(--color-text-primary);
+  font: 1.2rem/1.15 var(--font-body-text);
+  margin: 0 auto;
+  min-width: 350px;
+  max-width: 480px;
+  width: 100%;
+  height: calc(var(--vh, 1vh) * 100);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}

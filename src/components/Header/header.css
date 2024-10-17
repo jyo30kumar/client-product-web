@@ -3,7 +3,7 @@ header{
     overflow: hidden;
     min-height: 140px;
     background:radial-gradient(circle at center top, #E0BFFE 10%, #d5a7ff 18%, #7B22FA 80%),
-    linear-gradient(to bottom, #d5a7ff 0%, #7B22FA 90%, #3D0A4D 100%), url(https://www.transparenttextures.com/patterns/diagmonds-light.png);
+    linear-gradient(to bottom, #d5a7ff 0%, #7B22FA 90%, #3D0A4D 100%), url('../../../public/images/diagmonds-light.png');
     background-blend-mode: overlay;
     padding: 15px;
     padding-bottom: 10px;
