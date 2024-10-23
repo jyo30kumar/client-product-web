@@ -14,7 +14,7 @@ import useViewportHeight from "./hooks/useViewportHeight";
 import "./App.css";
 
 function App() {
-  const [isLoggedIn, setLoggedIn] = useState(true);
+  const [isLoggedIn, setLoggedIn] = useState(false);
 
   useViewportHeight();
 
